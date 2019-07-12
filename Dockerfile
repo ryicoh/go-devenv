@@ -1,6 +1,6 @@
 FROM golang:1.12
 
-RUN apt upudate -q && \
+RUN apt update -q && \
     apt install -qy git python3 wget curl silversearcher-ag && \
     wget https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.tar.gz -o /tmp/nvim-linux64.tar.gz && \
     tar xf -C /tmp nvim-linux64.tar.gz && \
