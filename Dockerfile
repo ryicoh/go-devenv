@@ -30,6 +30,7 @@ RUN git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && \
 RUN source ~/.bashrc && \
     pip install neovim && \
     git clone https://github.com/ryicoh/nvim.git ~/.config/nvim && \
+    nvim +PlugInstall +qa ; \
     echo "alias vi=nvim" >> ~/.bashrc
 
 EXPOSE 1323
