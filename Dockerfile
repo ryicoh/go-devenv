@@ -22,6 +22,8 @@ RUN git clone git://github.com/yyuu/pyenv.git ~/.pyenv && \
     pyenv global 3.7.3 && \
     pyenv rehash
 
+RUN go get -u github.com/gravityblast/fresh
+
 RUN git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && \
     ~/.fzf/install --key-bindings --completion --update-rc
 
